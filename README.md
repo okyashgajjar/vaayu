@@ -1,37 +1,62 @@
-# Vaayu
-
 <p align="center">
-  <img src="./VAAYU.png" alt="Vaayu — production-grade skills for AI coding agents" width="100%" />
+  <img src="./VAAYU.png" alt="Vaayu" width="100%" />
 </p>
 
-> Production-grade skills for AI coding agents. Evaluate, build, scale, compress.
+<h1 align="center">Vaayu</h1>
 
-Four open-standard `SKILL.md` skills that work in [Agent Skills](https://agentskills.io)-compatible tools: Claude Code, Codex, Gemini CLI, Cursor, Windsurf, Cline, Roo Code, Goose, OpenCode, GitHub Copilot, and more.
+<p align="center">
+  <em>Production-grade skills for AI coding agents. Evaluate, build, scale, compress.</em>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Claude%20Code-D97757?style=flat-square" alt="Claude Code" />
+  <img src="https://img.shields.io/badge/Antigravity-000000?style=flat-square" alt="Antigravity" />
+  <img src="https://img.shields.io/badge/OpenAI%20Codex-000000?style=flat-square" alt="Codex" />
+  <img src="https://img.shields.io/badge/Gemini%20CLI-1A73E8?style=flat-square" alt="Gemini CLI" />
+  <img src="https://img.shields.io/badge/Cursor-8A63D2?style=flat-square" alt="Cursor" />
+  <img src="https://img.shields.io/badge/Windsurf-0FB8A1?style=flat-square" alt="Windsurf" />
+  <img src="https://img.shields.io/badge/Cline-3B82F6?style=flat-square" alt="Cline" />
+  <img src="https://img.shields.io/badge/Copilot-4078C0?style=flat-square" alt="GitHub Copilot" />
+  <img src="https://img.shields.io/badge/OpenCode-1C1C1C?style=flat-square" alt="OpenCode" />
+  <img src="https://img.shields.io/badge/Roo%20Code-22C55E?style=flat-square" alt="Roo Code" />
+  <img src="https://img.shields.io/badge/Kilo%20Code-EF4444?style=flat-square" alt="Kilo Code" />
+  <img src="https://img.shields.io/badge/Goose-E0E0E0?style=flat-square" alt="Goose" />
+</p>
+
+---
+
+**Vaayu** is a collection of hand-crafted skills for the open
+[Agent Skills](https://agentskills.io) standard. Every skill is a single portable
+`SKILL.md` — no vendor lock-in, no mandatory hooks, no runtime — load it in any
+compatible agent and it just works.
+
+- **Portable** — one format across every major coding agent
+- **Zero-config** — drop in a skill directory and triggers on intent
+- **Low context cost** — progressive disclosure, compact frontmatter
 
 ## Skills
 
-| Skill | What it does | Works without writing code |
+| Skill | Purpose | Pure analysis |
 |---|---|---|
-| [**karm**](./karm/) | Production-readiness evaluation. Turns any product idea, requirement, or architecture into a build-ready plan covering features, testing, security, performance, scalability, and cost. | No |
-| [**veg**](./veg/) | Problem & product evaluation. Converts hackathon problem statements, startup ideas, and requirements into clear, feasible, buildable solutions. | **Yes** |
-| [**vega-velocity**](./vega-velocity/) | Scalability engineering. Evaluates entire systems for architecture, databases, caching, queues, security, performance, and cost — targeting 20k+ concurrent users. | **Yes** |
-| [**laghu**](./laghu/) | Token compression. Drops filler, keeps substance. Same technical accuracy, fewer output tokens. | No |
+| [**karm**](./karm/) | Production-readiness evaluation — turns ideas into build-ready plans covering features, testing, security, performance, scalability, and cost. | |
+| [**veg**](./veg/) | Problem & product evaluation — hackathon, startup, and requirement analysis into feasible, buildable solutions. | ✅ |
+| [**vega-velocity**](./vega-velocity/) | Scalability engineering — end-to-end evaluation for 20k+ concurrent users, from architecture to cost. | ✅ |
+| [**laghu**](./laghu/) | Token compression — drops filler, keeps substance and technical accuracy. | |
 
-`veg` and `vega-velocity` are pure analysis skills — no code needed, safe for claude.ai.
+`veg` and `vega-velocity` need no code execution — safe for claude.ai.
 
 ## Install
 
-### npm (any agent)
+### npm — any agent
 
 ```bash
-# install one or all skills
 npx skills add okyashgajjar/vaayu --skill karm
 npx skills add okyashgajjar/vaayu --skill veg
 npx skills add okyashgajjar/vaayu --skill vega-velocity
 npx skills add okyashgajjar/vaayu --skill laghu
 ```
 
-Mutual targeting supported, e.g. `-a codex`, `-a gemini`, `-a cursor`.
+Target a specific agent with `-a codex`, `-a gemini`, `-a cursor`, etc.
 
 ### Claude Code
 
@@ -42,67 +67,69 @@ claude skill add vega-velocity/SKILL.md
 claude skill add laghu/SKILL.md
 ```
 
-Or copy to `~/.claude/skills/`:
+### claude.ai
 
-```bash
-cp karm/SKILL.md ~/.claude/skills/
-cp veg/SKILL.md ~/.claude/skills/
-cp vega-velocity/SKILL.md ~/.claude/skills/
-cp laghu/SKILL.md ~/.claude/skills/
-```
+Upload the zips from [`claudeai/`](./claudeai/) at
+**Customize → Skills → + Create skill → Upload a skill**.
+Requires a Pro/Max/Team/Enterprise plan with code execution enabled.
 
-### claude.ai (web)
-
-Upload the ready-made zips from `claudeai/` at **Customize &gt; Skills &gt; + Create skill &gt; Upload a skill**. Requires a Max/Pro/Team/Enterprise plan with code execution enabled.
-
-| Skill | Zip |
+| Skill | Archive |
 |---|---|
-| veg | `claudeai/veg.zip` |
-| vega-velocity | `claudeai/vega-velocity.zip` |
+| veg | [`claudeai/veg.zip`](./claudeai/veg.zip) |
+| vega-velocity | [`claudeai/vega-velocity.zip`](./claudeai/vega-velocity.zip) |
 
-### Direct (any agent, manual)
+### Manual — any agent
 
-Each skill is a folder with a matching `SKILL.md`. Copy the folder into your agent's skill directory (`.claude/skills/`, `.agents/skills/`, `.cursor/skills/`, `.gemini/skills/`, etc.) — or use `sync-skill`:
-
-```bash
-npx sync-skill claude codex       # Claude → Codex
-npx sync-skill claude cursor      # Claude → Cursor
-```
-
-## Agent compatibility
-
-All skills use only the portable core of the Agent Skills spec: `name` + `description` frontmatter, lowercase hyphenated folder names, progressive disclosure. No Claude Code extensions (hooks, subagents, dynamic context).
-
-| Agent | Skill directory | Notes |
-|---|---|---|
-| Claude Code | `.claude/skills/`, `~/.claude/skills/` | Native. `claude skill add`. |
-| OpenAI Codex | `.agents/skills/`, `~/.agents/skills/` | Native. Also `~/.codex/skills/`. |
-| Gemini CLI | `.gemini/skills/`, `.agents/skills/` | Native since v0.25. |
-| Cursor | `.cursor/skills/` (also reads `.claude/skills/`) | Native — lowercase folder names required, satisfied. |
-| Windsurf | `.windsurf/skills/`, `.agents/skills/` | Native. |
-| Cline, Roo Code, Kilo Code, Goose | `.agents/skills/`, `.clinerules/skills/`, etc. | Native. |
-| OpenCode | `.opencode/skills/`, `.claude/skills/`, `.agents/skills/` | Native. |
-| GitHub Copilot | ~/.copilot/skills/, `.github/skills/` | Native (also reads `~/.claude/skills/`). |
-| claude.ai | — | Zip upload from `claudeai/`. No code-involved skills (`veg`, `vega-velocity`). |
-| Antigravity, Trae | adapter | Uses `.agent/skills/` (singular) or rule conversion. |
-
-## How the skills trigger
-
-Each skill has a compact, exact `description` (≤200 chars, claude.ai limit). Agents match it against task intent:
-
-- **karm** — product idea / architecture needs a production-readiness plan
-- **veg** — hackathon or startup problem statement needs evaluation
-- **vega-velocity** — mention of scale, performance, or production architecture
-- **laghu** — "laghu mode", "be brief", "compress", "less tokens", `/laghu`
-
-## Development
+Copy each skill folder into your agent's skills directory:
 
 ```bash
-npm run validate   # confirms all SKILL.md files present
+cp -r karm ~/.claude/skills/
+cp -r veg ~/.agents/skills/
+# …or sync between agents
+npx sync-skill claude codex
 ```
 
-Stuck to portable core on purpose: every skill is one `SKILL.md` — works everywhere, minimal context cost.
+## Compatibility
+
+Built strictly on the portable core of the spec — `name` + `description`
+frontmatter, lowercase hyphenated folders — so no extensions to translate.
+
+| Agent | Path |
+|---|---|
+| Claude Code | `.claude/skills/`, `~/.claude/skills/` |
+| OpenAI Codex | `.agents/skills/`, `~/.codex/skills/` |
+| Gemini CLI | `.gemini/skills/`, `.agents/skills/` |
+| Cursor | `.cursor/skills/` |
+| Windsurf | `.windsurf/skills/`, `.agents/skills/` |
+| Cline · Roo · Kilo | `.agents/skills/`, `.clinerules/skills/` |
+| OpenCode | `.opencode/skills/`, `.claude/skills/` |
+| Copilot | `.copilot/skills/`, `.github/skills/` |
+| Goose | `~/.config/goose/skills/`, `.agents/skills/` |
+| Antigravity | `.agent/skills/` |
+| claude.ai | zip upload |
+
+## Triggering
+
+Skills activate on intent. Each carries a tight `description` (≤200 chars) that
+agents match against the task.
+
+| Skill | Triggers on |
+|---|---|
+| `karm` | a product idea or architecture needing a readiness plan |
+| `veg` | hackathon / startup problem statements or requirements |
+| `vega-velocity` | scale, performance, or production architecture |
+| `laghu` | "laghu mode", "be brief", "compress", "less tokens", `/laghu` |
+
+## Contributing
+
+Skills live as a single file each — edit `*/SKILL.md` and open a PR.
+
+```bash
+npm run validate   # all SKILL.md files present
+```
+
+Keep changes to the portable core: portable beats clever.
 
 ## License
 
-MIT
+[MIT](./LICENSE)
