@@ -1,5 +1,9 @@
 # Vaayu
 
+<p align="center">
+  <img src="./VAAYU.png" alt="Vaayu — production-grade skills for AI coding agents" width="100%" />
+</p>
+
 > Production-grade skills for AI coding agents. Evaluate, build, scale, compress.
 
 Four open-standard `SKILL.md` skills that work in [Agent Skills](https://agentskills.io)-compatible tools: Claude Code, Codex, Gemini CLI, Cursor, Windsurf, Cline, Roo Code, Goose, OpenCode, GitHub Copilot, and more.
