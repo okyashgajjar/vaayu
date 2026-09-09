@@ -4,6 +4,12 @@
 
 Production-readiness and scalability engineering skill for AI coding agents. Evaluates entire products — not just AI/ML — for architecture, databases, caching, queues, infrastructure, security, performance, reliability, observability, and cost.
 
+> [!TIP]
+> **Pure analysis — zero code execution.** VegaVelocity runs anywhere a skill
+> runs: claude.ai, Claude Code, Codex, Gemini CLI, Cursor, Windsurf, Cline,
+> Antigravity, Copilot, and every Agent Skills-compatible agent. No sandbox,
+> no runtime, no permissions needed.
+
 ## What VegaVelocity Does
 
 Takes any product idea, hackathon problem statement, client requirement, or existing architecture and produces a complete production-readiness evaluation targeting 20,000+ concurrent users.

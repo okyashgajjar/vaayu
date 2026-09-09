@@ -34,16 +34,26 @@ compatible agent and it just works.
 - **Zero-config** — drop in a skill directory and triggers on intent
 - **Low context cost** — progressive disclosure, compact frontmatter
 
+> [!IMPORTANT]
+> **Not Claude-Code-only.** Every skill runs unmodified on Claude Code, OpenAI
+> Codex, Gemini CLI, Cursor, Windsurf, Cline, Antigravity, GitHub Copilot,
+> OpenCode, Goose, and 20+ Agent Skills-compatible agents. One portable
+> `SKILL.md` — no conversion, no hooks, no vendor lock-in. Name one agent you
+> use; these run in it.
+
 ## Skills
 
-| Skill | Purpose | Pure analysis |
+| Skill | Purpose | claude.ai ready |
 |---|---|---|
 | [**karm**](./karm/) | Production-readiness evaluation — turns ideas into build-ready plans covering features, testing, security, performance, scalability, and cost. | |
 | [**veg**](./veg/) | Problem & product evaluation — hackathon, startup, and requirement analysis into feasible, buildable solutions. | ✅ |
 | [**vega-velocity**](./vega-velocity/) | Scalability engineering — end-to-end evaluation for 20k+ concurrent users, from architecture to cost. | ✅ |
 | [**laghu**](./laghu/) | Token compression — drops filler, keeps substance and technical accuracy. | |
 
-`veg` and `vega-velocity` need no code execution — safe for claude.ai.
+> [!TIP]
+> **veg** and **vega-velocity** are pure analysis. Zero code execution — no
+> sandbox, no runtime, no permissions. That makes them claude.ai-ready out of
+> the box, on top of running natively in every coding agent above.
 
 ## Install
 
@@ -69,9 +79,9 @@ claude skill add laghu/SKILL.md
 
 ### claude.ai
 
-Upload the zips from [`claudeai/`](./claudeai/) at
+The two analysis skills install on claude.ai **as-is** — no code execution
+required. Upload the zips from [`claudeai/`](./claudeai/) at
 **Customize → Skills → + Create skill → Upload a skill**.
-Requires a Pro/Max/Team/Enterprise plan with code execution enabled.
 
 | Skill | Archive |
 |---|---|

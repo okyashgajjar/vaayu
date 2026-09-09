@@ -4,6 +4,12 @@
 
 Problem & product evaluation engine for AI coding agents. Converts hackathon problem statements, startup ideas, and requirements into clear, feasible, differentiated, technically sound solutions.
 
+> [!TIP]
+> **Pure analysis — zero code execution.** Veg runs anywhere a skill runs:
+> claude.ai, Claude Code, Codex, Gemini CLI, Cursor, Windsurf, Cline,
+> Antigravity, Copilot, and every Agent Skills-compatible agent. No sandbox,
+> no runtime, no permissions needed.
+
 ## What Veg Does
 
 Veg evaluates ideas through three operating modes:
