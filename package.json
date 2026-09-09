@@ -1,0 +1,35 @@
+{
+  "name": "vaayu",
+  "version": "1.0.0",
+  "description": "Production-grade skills for AI coding agents",
+  "keywords": [
+    "claude",
+    "claude-code",
+    "skills",
+    "ai",
+    "agent",
+    "production-readiness",
+    "architecture",
+    "evaluation",
+    "token-compression",
+    "hackathon",
+    "startup"
+  ],
+  "author": "yg",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/okyashgajjar/vaayu.git"
+  },
+  "files": [
+    "Karm/SKILL.md",
+    "Veg/SKILL.md",
+    "VegaVelocity/SKILL.md",
+    "Laghu/SKILL.md",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "validate": "echo 'All SKILL.md files present' && ls */SKILL.md"
+  }
+}
