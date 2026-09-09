@@ -37,15 +37,15 @@ Veg evaluates ideas through three operating modes:
 ### Claude Code
 
 ```bash
-claude skill add Veg/SKILL.md
+claude skill add veg/SKILL.md
 ```
 
 ### Manual
 
-Copy `Veg/SKILL.md` into your agent's skill directory:
+Copy `veg/SKILL.md` into your agent's skill directory:
 
 ```bash
-cp Veg/SKILL.md ~/.claude/skills/
+cp veg/SKILL.md ~/.claude/skills/
 ```
 
 ## Usage

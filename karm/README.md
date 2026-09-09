@@ -26,15 +26,15 @@ When given an idea, requirement, feature, architecture, or problem statement, Ka
 ### Claude Code
 
 ```bash
-claude skill add Karm/SKILL.md
+claude skill add karm/SKILL.md
 ```
 
 ### Manual
 
-Copy `Karm/SKILL.md` into your agent's skill directory:
+Copy `karm/SKILL.md` into your agent's skill directory:
 
 ```bash
-cp Karm/SKILL.md ~/.claude/skills/
+cp karm/SKILL.md ~/.claude/skills/
 ```
 
 ## Usage

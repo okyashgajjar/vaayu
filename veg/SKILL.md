@@ -1,6 +1,6 @@
 ---
-name: Veg
-description: Evaluate and transform hackathon problem statements, startup ideas, and product requirements into clear, feasible, differentiated, technically sound end-to-end solutions. Works for beginners and advanced technical teams.
+name: veg
+description: "Evaluate hackathon, startup, and product ideas into clear, feasible, buildable solutions. Covers problem, users, competition, gap, architecture, tech stack, and final verdict."
 ---
 
 # Veg — Problem & Product Evaluation Engine

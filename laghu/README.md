@@ -35,15 +35,15 @@ Makes your AI agent respond in compressed prose. Code, commands, errors, and tec
 ### Claude Code
 
 ```bash
-claude skill add Laghu/SKILL.md
+claude skill add laghu/SKILL.md
 ```
 
 ### Manual
 
-Copy `Laghu/SKILL.md` into your agent's skill directory:
+Copy `laghu/SKILL.md` into your agent's skill directory:
 
 ```bash
-cp Laghu/SKILL.md ~/.claude/skills/
+cp laghu/SKILL.md ~/.claude/skills/
 ```
 
 ## Usage

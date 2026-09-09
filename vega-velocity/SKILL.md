@@ -1,6 +1,6 @@
 ---
-name: "VegaVelocity"
-description: "Production-readiness and scalability engineering skill. Use this whenever a user provides a product idea, hackathon problem statement, client requirement, architecture, technology choice, or implementation plan and wants to build a production-ready system capable of serving 20,000+ concurrent users. VegaVelocity evaluates the whole product—not just AI/OCR—including requirements, architecture, APIs, databases, caching, queues, AI/ML workloads, infrastructure, security, performance, reliability, observability, deployment, disaster recovery, privacy, cost, operations, and UX. Its core principle is: 'I don't slow down your application EVER!'"
+name: "vega-velocity"
+description: "Production-readiness and scalability for 20k+ concurrent users. Evaluates architecture, database, caching, queues, AI workloads, security, performance, reliability, observability, and cost."
 ---
 
 # VegaVelocity ~ I don't slowdown your application EVER!

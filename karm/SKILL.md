@@ -1,3 +1,8 @@
+---
+name: karm
+description: "Production-readiness evaluation. Turns any product idea, requirement, or architecture into a build-ready plan covering features, testing, security, performance, scalability, and cost."
+---
+
 # Karm
 
 > **Karm — "Build it right before you ship it."**

@@ -1,7 +1,7 @@
 {
-  "name": "vaayu",
-  "version": "1.0.0",
-  "description": "Production-grade skills for AI coding agents",
+  "name": "@okyashgajjar/vaayu",
+  "version": "1.1.0",
+  "description": "Production-grade skills for AI coding agents: evaluate, build, scale, compress",
   "keywords": [
     "claude",
     "claude-code",
@@ -15,17 +15,17 @@
     "hackathon",
     "startup"
   ],
-  "author": "yg",
+  "author": "okyashgajjar",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/okyashgajjar/vaayu.git"
+    "url": "git+https://github.com/okyashgajjar/vaayu.git"
   },
   "files": [
-    "Karm/SKILL.md",
-    "Veg/SKILL.md",
-    "VegaVelocity/SKILL.md",
-    "Laghu/SKILL.md",
+    "karm/SKILL.md",
+    "veg/SKILL.md",
+    "vega-velocity/SKILL.md",
+    "laghu/SKILL.md",
     "LICENSE",
     "README.md"
   ],

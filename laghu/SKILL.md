@@ -1,6 +1,6 @@
 ---
-name: Laghu
-description: "Compress every response. Drop filler, keep substance. Same answers, fewer tokens. Use when user says 'laghu mode', 'be brief', 'compress', 'less tokens', or invokes /laghu."
+name: laghu
+description: "Compress responses to save tokens. Drop filler, keep substance, keep code exact. Trigger with 'laghu mode', 'be brief', 'compress', 'less tokens', or /laghu."
 ---
 
 # Laghu

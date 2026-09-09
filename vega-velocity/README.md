@@ -26,15 +26,15 @@ Takes any product idea, hackathon problem statement, client requirement, or exis
 ### Claude Code
 
 ```bash
-claude skill add VegaVelocity/SKILL.md
+claude skill add vega-velocity/SKILL.md
 ```
 
 ### Manual
 
-Copy `VegaVelocity/SKILL.md` into your agent's skill directory:
+Copy `vega-velocity/SKILL.md` into your agent's skill directory:
 
 ```bash
-cp VegaVelocity/SKILL.md ~/.claude/skills/
+cp vega-velocity/SKILL.md ~/.claude/skills/
 ```
 
 ## Usage
